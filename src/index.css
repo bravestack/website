@@ -1,0 +1,242 @@
+/* Google Fonts - must be first */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@700;800&family=Space+Mono:wght@400;700&display=swap');
+
+@import "tailwindcss";
+
+/* ══════════════════════════════════════════════════════════════════════════
+   EXPLORE LANDING PAGE - Design Tokens from Solê Design System
+   ══════════════════════════════════════════════════════════════════════════ */
+
+@theme {
+  /* ─────────────────────────────────────────────────────────────────────────
+     COLORS - Sunset, Sea, Sand, Ink + Warm Neutrals
+     ───────────────────────────────────────────────────────────────────────── */
+
+  /* Sunset (Primary) - Coral */
+  --color-sunset-50: #FFF3EF;
+  --color-sunset-100: #FFE0D5;
+  --color-sunset-200: #FFC1AC;
+  --color-sunset-300: #FB9C7E;
+  --color-sunset-400: #F37A55;
+  --color-sunset-500: #EC5E37;
+  --color-sunset-600: #D14A26;
+  --color-sunset-700: #A93A1D;
+  --color-sunset-800: #822D17;
+  --color-sunset-900: #5C2011;
+
+  /* Sea (Secondary) - Teal */
+  --color-sea-50: #E8F6F3;
+  --color-sea-100: #C6EBE4;
+  --color-sea-200: #93D9CE;
+  --color-sea-300: #5BC6B4;
+  --color-sea-400: #2BA796;
+  --color-sea-500: #1C9485;
+  --color-sea-600: #137567;
+  --color-sea-700: #105C52;
+  --color-sea-800: #0E4742;
+  --color-sea-900: #0A3431;
+
+  /* Sand (Accent) - Gold */
+  --color-sand-50: #FEF7E7;
+  --color-sand-100: #FCEBBE;
+  --color-sand-200: #F8D886;
+  --color-sand-300: #F3C350;
+  --color-sand-400: #EDAE2C;
+  --color-sand-500: #D6921A;
+  --color-sand-600: #B27510;
+  --color-sand-700: #8C5B10;
+  --color-sand-800: #6B4711;
+  --color-sand-900: #49300C;
+
+  /* Neutral - Warm Sand-Tinted */
+  --color-neutral-50: #FAF7F1;
+  --color-neutral-100: #F2ECE2;
+  --color-neutral-200: #E7DECF;
+  --color-neutral-300: #D6CBB7;
+  --color-neutral-400: #B6A88F;
+  --color-neutral-500: #8B8069;
+  --color-neutral-600: #67604F;
+  --color-neutral-700: #4B4639;
+  --color-neutral-800: #322E25;
+  --color-neutral-900: #1B1813;
+
+  /* Ink - Deep Teal-Charcoal */
+  --color-ink: #14302E;
+
+  /* Semantic Colors */
+  --color-success: #2E9E5B;
+  --color-success-bg: #E2F2E8;
+  --color-warning: #E0971A;
+  --color-warning-bg: #FBEFD0;
+  --color-danger: #D8442E;
+  --color-danger-bg: #FBE1DC;
+  --color-info: #2E8FD0;
+  --color-info-bg: #DDEDF8;
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     TYPOGRAPHY
+     ───────────────────────────────────────────────────────────────────────── */
+
+  --font-display: "Sora", system-ui, -apple-system, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SPACING
+     ───────────────────────────────────────────────────────────────────────── */
+
+  --spacing-section: clamp(4rem, 3rem + 5vw, 8rem);
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     BORDER RADIUS
+     ───────────────────────────────────────────────────────────────────────── */
+
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-2xl: 36px;
+  --radius-pill: 999px;
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     SHADOWS - Warm-Tinted (rgba of ink #14302E)
+     ───────────────────────────────────────────────────────────────────────── */
+
+  --shadow-xs: 0 1px 2px rgba(20, 48, 46, 0.06);
+  --shadow-sm: 0 2px 6px rgba(20, 48, 46, 0.08), 0 1px 2px rgba(20, 48, 46, 0.05);
+  --shadow-md: 0 8px 20px rgba(20, 48, 46, 0.10), 0 2px 5px rgba(20, 48, 46, 0.06);
+  --shadow-lg: 0 16px 36px rgba(20, 48, 46, 0.13), 0 5px 10px rgba(20, 48, 46, 0.07);
+  --shadow-xl: 0 30px 64px rgba(20, 48, 46, 0.18), 0 10px 20px rgba(20, 48, 46, 0.09);
+  --shadow-brand: 0 10px 26px rgba(236, 94, 55, 0.36);
+  --shadow-sea: 0 10px 26px rgba(28, 148, 133, 0.34);
+
+  /* ─────────────────────────────────────────────────────────────────────────
+     MOTION
+     ───────────────────────────────────────────────────────────────────────── */
+
+  --duration-instant: 80ms;
+  --duration-fast: 140ms;
+  --duration-base: 220ms;
+  --duration-slow: 380ms;
+  --duration-slowest: 560ms;
+
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   BASE STYLES
+   ══════════════════════════════════════════════════════════════════════════ */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: var(--color-neutral-50);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography defaults */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--color-ink);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Numeric text */
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-sunset-500) 45%, transparent);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   UTILITY CLASSES
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Gradient backgrounds */
+.bg-hero-gradient {
+  background: radial-gradient(120% 100% at 85% 0%, #FFE1D4 0%, #FAF7F1 50%, #E8F7F3 100%);
+}
+
+.bg-sunset-gradient {
+  background: linear-gradient(135deg, var(--color-sunset-500), var(--color-sunset-700));
+}
+
+.bg-sea-gradient {
+  background: linear-gradient(135deg, var(--color-sea-500), var(--color-sea-700));
+}
+
+/* Photo scrim */
+.scrim-bottom {
+  background: linear-gradient(to top, rgba(20, 48, 46, 0.85), transparent 55%);
+}
+
+/* Eyebrow text */
+.eyebrow {
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-sea-500);
+}
+
+/* Section spacing */
+.section {
+  padding-top: var(--spacing-section);
+  padding-bottom: var(--spacing-section);
+}
