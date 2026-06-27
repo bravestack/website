@@ -5,6 +5,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: '/explore-landing/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
