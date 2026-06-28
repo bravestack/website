@@ -2,6 +2,7 @@ import { motion } from "framer-motion"
 import { Users, MapPin, Headphones, MessageCircle, BarChart3 } from "lucide-react"
 import { StatCard } from "@/components/shared/StatCard"
 import { Badge } from "@/components/ui/badge"
+import { Lens } from "@/components/ui/lens"
 import dashboard from "@/assets/images/dashboard2.webp"
 
 const stats = [
@@ -68,7 +69,7 @@ export function Dashboard() {
             </div>
             <div className="flex-1 flex justify-center">
               <div className="bg-neutral-700 rounded-md px-4 py-1 text-xs text-neutral-400 font-mono">
-                dashboard.explore.tec.br
+                insights.explore.tec.br
               </div>
             </div>
             <Badge variant="solid" tone="sea" size="sm">
@@ -78,27 +79,14 @@ export function Dashboard() {
 
           {/* Screenshot */}
           <div className="rounded-b-[var(--radius-xl)] overflow-hidden shadow-[var(--shadow-xl)] border border-neutral-200 border-t-0">
-            <img
-              src={dashboard}
-              alt="Dashboard do Explore - Estatísticas de visitantes"
-              className="w-full h-auto"
-            />
+            <Lens zoomFactor={1.8} lensSize={220} ariaLabel="Zoom no dashboard">
+              <img
+                src={dashboard}
+                alt="Dashboard do Explore - Estatísticas de visitantes"
+                className="w-full h-auto"
+              />
+            </Lens>
           </div>
-
-          {/* Floating annotation */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4, duration: 0.5 }}
-            className="absolute -right-4 top-1/4 hidden lg:block"
-          >
-            <div className="bg-white rounded-[var(--radius-lg)] p-4 shadow-[var(--shadow-lg)] border border-neutral-200 max-w-[200px]">
-              <div className="text-xs text-neutral-500 mb-1">Tendência</div>
-              <div className="font-mono font-bold text-lg text-sea-500">+21.3%</div>
-              <div className="text-sm text-neutral-600">mais plays do guia neste mês</div>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </section>

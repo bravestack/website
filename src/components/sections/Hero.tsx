@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import { Smartphone, Play, Sun } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { PhoneMockup } from "@/components/shared/PhoneMockup"
-import telaInicial from "@/assets/images/tela-inicial.webp"
+import telaInicial from "@/assets/images/map-screen.jpeg"
 
 export function Hero() {
   return (

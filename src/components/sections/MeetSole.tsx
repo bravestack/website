@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 import { Mic, Sparkles, MapPin } from "lucide-react"
 import { PhoneMockup } from "@/components/shared/PhoneMockup"
-import telaIA from "@/assets/images/telaIA.webp"
+import telaIA from "@/assets/images/sole-screen.jpeg"
 
 export function MeetSole() {
   return (
