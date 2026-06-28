@@ -6,8 +6,8 @@ import { cn } from "@/lib/utils"
 import logoMark from "@/assets/icons/logo-mark.svg"
 
 const navLinks = [
-  { href: "#conheca", label: "Conheça" },
-  { href: "#cidade", label: "Na cidade" },
+  { href: "#sole", label: "Conheça a Solê" },
+  { href: "#cidade", label: "Como funciona" },
   { href: "#gestores", label: "Para gestores" },
 ]
 

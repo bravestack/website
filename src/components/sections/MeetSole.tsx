@@ -5,7 +5,7 @@ import telaIA from "@/assets/images/sole-screen.jpeg"
 
 export function MeetSole() {
   return (
-    <section className="section bg-neutral-50 overflow-hidden">
+    <section id="sole" className="section bg-neutral-50 overflow-hidden">
       <div className="container">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Phone mockup with IA screen */}
