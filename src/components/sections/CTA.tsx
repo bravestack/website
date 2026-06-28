@@ -28,13 +28,13 @@ export function CTA() {
             </div>
 
             <h2
-              className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl mb-8"
+              className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl mb-16"
               style={{ color: '#EC5E37' }}
             >
               A Solê está esperando você
             </h2>
 
-            <div className="flex justify-center">
+            <div className="flex justify-center mt-10">
               <a href="#qrcode">
                 <Button
                   variant="primary"

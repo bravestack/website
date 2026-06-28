@@ -1,6 +1,5 @@
 import { motion } from "framer-motion"
-import { Mic, Sparkles } from "lucide-react"
-import { SoleAvatar } from "@/components/shared/SoleAvatar"
+import { Mic, Sparkles, MapPin } from "lucide-react"
 import { PhoneMockup } from "@/components/shared/PhoneMockup"
 import telaIA from "@/assets/images/telaIA.webp"
 
@@ -49,7 +48,7 @@ export function MeetSole() {
               A Solê nasceu para aproximar turistas da cultura e da história dos municípios do Rio Grande do Norte. Como uma verdadeira amiga local, ela conhece cada canto, cada história e cada segredo das cidades potiguares.
             </p>
 
-            <div className="space-y-6">
+            <div className="space-y-6 mt-10">
               {/* Feature 1 */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -79,8 +78,8 @@ export function MeetSole() {
                 transition={{ delay: 0.2 }}
                 className="flex gap-4"
               >
-                <div className="flex-shrink-0">
-                  <SoleAvatar size="sm" />
+                <div className="flex-shrink-0 w-12 h-12 rounded-[var(--radius-md)] bg-sea-100 flex items-center justify-center">
+                  <MapPin className="w-6 h-6 text-sea-500" />
                 </div>
                 <div>
                   <h3 className="font-display font-bold text-lg text-ink mb-1">

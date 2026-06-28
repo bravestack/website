@@ -25,15 +25,15 @@ export function Dashboard() {
         >
           <span className="eyebrow mb-4 block flex items-center justify-center gap-2">
             <BarChart3 className="w-4 h-4" />
-            Inteligência turística
+            Para gestores e IGRs
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold text-ink mb-4">
-            Dados para transformar
+            Inteligência em tempo real
             <br />
-            <span className="text-sunset-500">o turismo</span>
+            <span className="text-sunset-500">para a sua IGR</span>
           </h2>
           <p className="text-lg text-neutral-600">
-            O Dashboard do Explore oferece insights em tempo real para gestores públicos e parceiros tomarem decisões mais inteligentes.
+            O painel do Explore é assinado pela IGR ou secretaria de turismo do município. Dados nascidos no campo — do app do turista para a tela do gestor, sem intermediários.
           </p>
         </motion.div>
 
@@ -68,7 +68,7 @@ export function Dashboard() {
             </div>
             <div className="flex-1 flex justify-center">
               <div className="bg-neutral-700 rounded-md px-4 py-1 text-xs text-neutral-400 font-mono">
-                dashboard.explore.rn.gov.br
+                dashboard.explore.tec.br
               </div>
             </div>
             <Badge variant="solid" tone="sea" size="sm">

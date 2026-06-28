@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { Menu, X, Smartphone } from "lucide-react"
+import { Menu, X, Smartphone, LogIn } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import logoMark from "@/assets/icons/logo-mark.svg"
 
 const navLinks = [
   { href: "#conheca", label: "Conheça" },
   { href: "#cidade", label: "Na cidade" },
-  { href: "#dashboard", label: "Dashboard" },
+  { href: "#gestores", label: "Para gestores" },
 ]
 
 export function Navbar() {
@@ -36,7 +37,8 @@ export function Navbar() {
     >
       <nav className="container flex items-center justify-between h-[72px]">
         {/* Logo */}
-        <a href="#" className="flex items-center">
+        <a href="#" className="flex items-center gap-2.5">
+          <img src={logoMark} alt="" className="w-8 h-8" aria-hidden="true" />
           <span className="font-display font-extrabold text-2xl tracking-tight text-ink">
             Explore
           </span>
@@ -55,8 +57,13 @@ export function Navbar() {
           ))}
         </div>
 
-        {/* CTA */}
-        <div className="hidden md:block">
+        {/* CTAs */}
+        <div className="hidden md:flex items-center gap-3">
+          <a href="https://insights.explore.tec.br" target="_blank" rel="noopener noreferrer">
+            <Button variant="ghost" size="sm" iconLeft={<LogIn className="w-4 h-4" />}>
+              Entrar
+            </Button>
+          </a>
           <a href="#qrcode">
             <Button variant="primary" iconLeft={<Smartphone className="w-[18px] h-[18px]" />}>
               Baixe o app
@@ -100,6 +107,20 @@ export function Navbar() {
                 iconLeft={<Smartphone className="w-[18px] h-[18px]" />}
               >
                 Baixe o app
+              </Button>
+            </a>
+            <a
+              href="https://insights.explore.tec.br"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <Button
+                variant="outline"
+                className="w-full"
+                iconLeft={<LogIn className="w-4 h-4" />}
+              >
+                Entrar
               </Button>
             </a>
           </div>

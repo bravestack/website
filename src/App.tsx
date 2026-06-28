@@ -8,6 +8,7 @@ import { MeetSole } from "@/components/sections/MeetSole"
 import { Features } from "@/components/sections/Features"
 import { CityPresence } from "@/components/sections/CityPresence"
 import { UserJourney } from "@/components/sections/UserJourney"
+import { ManagerDivider } from "@/components/sections/ManagerDivider"
 import { Dashboard } from "@/components/sections/Dashboard"
 import { DataInsights } from "@/components/sections/DataInsights"
 import { CTA } from "@/components/sections/CTA"
@@ -55,6 +56,9 @@ function App() {
         {/* Página 2 - O Explore faz parte da cidade */}
         <CityPresence />
         <UserJourney />
+
+        {/* Seção gestores - Para gestores e IGRs */}
+        <ManagerDivider />
 
         {/* Página 3 - Inteligência para transformar o turismo */}
         <Dashboard />

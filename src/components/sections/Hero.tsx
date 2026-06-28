@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { Smartphone, Play, Star, Sun } from "lucide-react"
+import { Smartphone, Play, Sun } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { PhoneMockup } from "@/components/shared/PhoneMockup"
 import telaInicial from "@/assets/images/tela-inicial.webp"
@@ -38,7 +38,7 @@ export function Hero() {
             </h1>
 
             {/* Lead */}
-            <p className="text-lg sm:text-xl text-neutral-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mb-8">
+            <p className="text-lg sm:text-xl text-neutral-600 leading-relaxed max-w-lg mx-auto lg:mx-0 mb-12">
               Sua assistente virtual de turismo. Conheça a cultura, história e os melhores lugares do Rio Grande do Norte de um jeito único e personalizado.
             </p>
 
@@ -64,25 +64,7 @@ export function Hero() {
               </a>
             </div>
 
-            {/* Trust indicators */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="flex items-center gap-3 justify-center lg:justify-start"
-            >
-              <div className="flex items-center gap-1">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="w-4 h-4 text-sand-400 fill-sand-400"
-                  />
-                ))}
-              </div>
-              <span className="text-sm text-neutral-500">
-                <strong className="text-ink">4.9</strong> de 12.000+ turistas
-              </span>
-            </motion.div>
+
           </motion.div>
 
           {/* Phone mockup */}

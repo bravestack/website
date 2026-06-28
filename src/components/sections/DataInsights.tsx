@@ -39,19 +39,16 @@ export function DataInsights() {
           >
             <span className="eyebrow flex items-center gap-2 mb-4">
               <Lightbulb className="w-4 h-4" />
-              Insights acionáveis
+              O ciclo de inteligência
             </span>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold text-ink mb-6">
-              Entenda o
-              <br />
-              <span className="text-sea-500">comportamento</span>
-              <br />
-              do turista
+              Cada visita vira dado.{" "}
+              <span className="text-sea-500">Cada dado vira decisão.</span>
             </h2>
 
-            <p className="text-lg text-neutral-600 leading-relaxed mb-8">
-              A Solê coleta dados anônimos de interações para gerar relatórios completos. Gestores públicos e parceiros podem usar essas informações para melhorar a experiência turística.
+            <p className="text-lg text-neutral-600 leading-relaxed mb-12">
+              Cada pergunta feita à Solê, cada rota criada, cada ponto visitado — tudo alimenta o painel do gestor em tempo real. É o primeiro dado que vem diretamente do turista, capturado no momento da visita, não em formulários pós-viagem que podem nem chegar.
             </p>
 
             {/* Insights grid */}

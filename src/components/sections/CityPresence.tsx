@@ -130,7 +130,7 @@ export function CityPresence() {
                   ))}
                 </div>
                 <p className="text-center text-sm text-neutral-500 mt-3 font-medium">
-                  explore.rn.gov.br
+                  explore.tec.br
                 </p>
               </div>
             </div>

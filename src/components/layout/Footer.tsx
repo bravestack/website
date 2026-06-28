@@ -35,17 +35,19 @@ export function Footer() {
             <span className="font-display font-extrabold text-2xl tracking-tight text-white mb-6 block">
               Explore
             </span>
-            <p className="text-neutral-400 text-base leading-relaxed mb-6 max-w-sm">
+            <p className="text-neutral-400 text-base leading-relaxed mb-16 max-w-sm">
               A plataforma de turismo inteligente que conecta visitantes à cultura e história do Rio Grande do Norte.
             </p>
-            <a href="#qrcode">
-              <Button
-                variant="primary"
-                iconLeft={<Smartphone className="w-[18px] h-[18px]" />}
-              >
-                Baixe o app
-              </Button>
-            </a>
+            <div className="mt-10">
+              <a href="#qrcode">
+                <Button
+                  variant="primary"
+                  iconLeft={<Smartphone className="w-[18px] h-[18px]" />}
+                >
+                  Baixe o app
+                </Button>
+              </a>
+            </div>
           </div>
 
           {/* Links */}
@@ -109,7 +111,7 @@ export function Footer() {
       <div className="border-t border-white/10">
         <div className="container py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-neutral-500 text-sm">
-            © 2025 Explore · Feito com carinho no Rio Grande do Norte
+            © 2026 Explore · Feito com carinho no Rio Grande do Norte
           </p>
           <div className="flex items-center gap-4">
             {socialLinks.map((social) => (
